@@ -1,24 +1,24 @@
-
-
-public class BMExercicio03 {
+public class BMExercio03 {
     public static void main(String[] args) {
-        int i;
-        long l;
-        float f = 40.f;
-        double d = 10.0;
-        boolean b;
-        char c;
-        i = 5;
-        l = 6;
-        b = true;
-        c = 'i';
+        float kinderOvo = 3.50f;
+        float bis = 2.95f;
+        float taxa_$ = 8.25f;
 
-        System.out.println(i);
-        System.out.println(l);
-        System.out.println(f);
-        System.out.println(d);
-        System.out.println(b);
-        System.out.println(c);
+        System.out.println("Valor do Kinder Ovo: " + kinderOvo + "\nValor do Bis: " + bis);
+
+        float total = kinderOvo + bis;
+
+        System.out.println("\nTotal sem taxa: " + total);
+
+        float taxaCalculada = (total * (taxa_$ / 100));
+
+        System.out.println("\nTaxa calculada: " + taxaCalculada);
+
+        float novoCusto = total + taxaCalculada * 2;
+
+        boolean muitoCaro = novoCusto > 10;
+
+        System.out.println("\nVáriavel 'muitoCaro': " + muitoCaro);
+
     }
-    
 }
